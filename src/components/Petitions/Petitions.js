@@ -5,7 +5,7 @@ const baseUrl = process.env.BASE_URL;
 async function GetPeople() {
   try {
     const response = await axios({
-      url: `${baseUrl}/people`,
+      url: `https://people-backend-franco-mostafa.herokuapp.com/people`,
       method: "GET",
     });
     return response.data;
