@@ -1,11 +1,11 @@
 import axios from "axios";
 
-const baseUrl = process.env.BASE_URL;
+const baseUrl = process.env.REACT_APP_BASE_URL;
 
 async function GetPeople() {
   try {
     const response = await axios({
-      url: `https://people-backend-franco-mostafa.herokuapp.com/people`,
+      url: `${baseUrl}/people`,
       method: "GET",
     });
     return response.data;
